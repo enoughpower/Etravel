@@ -10,31 +10,31 @@
 	<string>Etravel</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>27B135162BD97D95A85E658FDBE7B239069CEBBE</key>
-		<string>https://git.coding.net/enoughpower/food.git</string>
+		<key>D2DAAC6FCB257B39478CBDB1AAABB2E711536534</key>
+		<string>https://github.com/enoughpower/Etravel.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Etravel/Etravel.xcworkspace</string>
+	<string>Etravel.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>27B135162BD97D95A85E658FDBE7B239069CEBBE</key>
-		<string>../..</string>
+		<key>D2DAAC6FCB257B39478CBDB1AAABB2E711536534</key>
+		<string>..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://git.coding.net/enoughpower/food.git</string>
+	<string>https://github.com/enoughpower/Etravel.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>27B135162BD97D95A85E658FDBE7B239069CEBBE</string>
+	<string>D2DAAC6FCB257B39478CBDB1AAABB2E711536534</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>27B135162BD97D95A85E658FDBE7B239069CEBBE</string>
+			<string>D2DAAC6FCB257B39478CBDB1AAABB2E711536534</string>
 			<key>IDESourceControlWCCName</key>
-			<string>Git</string>
+			<string>Etravel</string>
 		</dict>
 	</array>
 </dict>
