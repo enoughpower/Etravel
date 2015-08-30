@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="454" id="KGk-i7-Jjw" customClass="TravelNotesCell">
+            <rect key="frame" x="0.0" y="0.0" width="388" height="454"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="weather.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="ZQi-TE-Uad">
+                        <rect key="frame" x="0.0" y="0.0" width="388" height="291"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="ZQi-TE-Uad" secondAttribute="height" multiplier="4:3" id="XQ7-gD-OOv"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="userPic.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="tdk-XT-ADU">
+                        <rect key="frame" x="10" y="271" width="48" height="48"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="48" id="U5f-qA-lI3"/>
+                            <constraint firstAttribute="width" secondItem="tdk-XT-ADU" secondAttribute="height" multiplier="1:1" id="f9C-4R-7FR"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="222223" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dah-oA-9iz">
+                        <rect key="frame" x="78" y="294" width="150" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="150" id="509-L2-wbt"/>
+                            <constraint firstAttribute="height" constant="25" id="esb-PZ-c5b"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                        <color key="textColor" red="1" green="0.52130011330000003" blue="0.15127687109999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Signal Mountain&gt;杰克逊湖&gt;Schwabachers Landing&gt;Mormon Row&gt;Oxbow Bend ha梅尔镇&gt;赫斯特城堡&gt;蛇河" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zXr-eg-1lH">
+                        <rect key="frame" x="5" y="324" width="378" height="124"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aRP-2r-ZAY">
+                        <rect key="frame" x="0.0" y="0.0" width="388" height="25"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="zXr-eg-1lH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="1P5-KS-k7i"/>
+                    <constraint firstItem="zXr-eg-1lH" firstAttribute="top" secondItem="dah-oA-9iz" secondAttribute="bottom" constant="5" id="Are-hX-Fk0"/>
+                    <constraint firstItem="dah-oA-9iz" firstAttribute="leading" secondItem="tdk-XT-ADU" secondAttribute="trailing" constant="20" id="IEA-jN-igC"/>
+                    <constraint firstItem="dah-oA-9iz" firstAttribute="bottom" secondItem="tdk-XT-ADU" secondAttribute="bottom" id="XSJ-MO-UH5"/>
+                    <constraint firstAttribute="trailing" secondItem="zXr-eg-1lH" secondAttribute="trailing" constant="5" id="arT-BJ-l0U"/>
+                    <constraint firstItem="ZQi-TE-Uad" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="hGJ-iz-OBw"/>
+                    <constraint firstItem="tdk-XT-ADU" firstAttribute="top" secondItem="ZQi-TE-Uad" secondAttribute="bottom" constant="-20" id="mru-3T-eS5"/>
+                    <constraint firstItem="ZQi-TE-Uad" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="nMz-V6-M5U"/>
+                    <constraint firstItem="tdk-XT-ADU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="nRT-qU-Jvf"/>
+                    <constraint firstAttribute="bottom" secondItem="zXr-eg-1lH" secondAttribute="bottom" constant="5" id="qLQ-GG-QOP"/>
+                    <constraint firstAttribute="trailing" secondItem="ZQi-TE-Uad" secondAttribute="trailing" id="rRH-If-hgz"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.96514256389999997" green="0.94842274839999996" blue="1" alpha="0.91000000000000003" colorSpace="calibratedRGB"/>
+            <connections>
+                <outlet property="headImage" destination="ZQi-TE-Uad" id="nAB-TY-6lA"/>
+                <outlet property="notesLabel" destination="zXr-eg-1lH" id="Wif-Q7-4xD"/>
+                <outlet property="titleLabel" destination="aRP-2r-ZAY" id="ccE-qK-0Q6"/>
+                <outlet property="userHeadImage" destination="tdk-XT-ADU" id="3Bg-Dl-vD9"/>
+                <outlet property="userName" destination="dah-oA-9iz" id="MOL-mK-JIu"/>
+            </connections>
+            <point key="canvasLocation" x="388" y="370"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="userPic.jpg" width="100" height="100"/>
+        <image name="weather.jpg" width="1024" height="828"/>
+    </resources>
+</document>

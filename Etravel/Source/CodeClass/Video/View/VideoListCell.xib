@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="gTV-IL-0wX" customClass="VideoListCell">
+            <rect key="frame" x="0.0" y="0.0" width="213" height="275"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="213" height="275"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="多云.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="2eN-nj-Wau">
+                        <rect key="frame" x="0.0" y="0.0" width="213" height="275"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2:48" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zBC-gQ-XdT">
+                        <rect key="frame" x="161" y="253" width="50" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="KSq-mj-hRj"/>
+                            <constraint firstAttribute="height" constant="20" id="sYG-i3-2iL"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="迪拜全家旅游胜地 带上家人一起来沙漠绿洲吧" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tdW-da-71e">
+                        <rect key="frame" x="2" y="2" width="209" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="BPu-qV-WAa"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="play.png" translatesAutoresizingMaskIntoConstraints="NO" id="1O8-Ar-FUP">
+                        <rect key="frame" x="74" y="126" width="64" height="64"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="1O8-Ar-FUP" secondAttribute="height" multiplier="1:1" id="8bw-7X-tgp"/>
+                            <constraint firstAttribute="height" constant="64" id="wgV-Je-SqU"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="tdW-da-71e" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="2" id="4II-8B-7xH"/>
+                <constraint firstAttribute="trailing" secondItem="zBC-gQ-XdT" secondAttribute="trailing" constant="2" id="Bfg-Cy-1jE"/>
+                <constraint firstItem="2eN-nj-Wau" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="J08-Rr-iUI"/>
+                <constraint firstAttribute="trailing" secondItem="tdW-da-71e" secondAttribute="trailing" constant="2" id="RPc-Pe-DHA"/>
+                <constraint firstAttribute="bottom" secondItem="zBC-gQ-XdT" secondAttribute="bottom" constant="2" id="WpG-Ih-3tK"/>
+                <constraint firstAttribute="bottom" secondItem="2eN-nj-Wau" secondAttribute="bottom" id="XRk-ok-WoC"/>
+                <constraint firstAttribute="centerX" secondItem="1O8-Ar-FUP" secondAttribute="centerX" id="d1g-cY-BiY"/>
+                <constraint firstItem="2eN-nj-Wau" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="eIU-H7-5ZM"/>
+                <constraint firstItem="tdW-da-71e" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="2" id="fUp-aF-JBN"/>
+                <constraint firstAttribute="trailing" secondItem="2eN-nj-Wau" secondAttribute="trailing" id="nYm-xK-86h"/>
+                <constraint firstAttribute="centerY" secondItem="1O8-Ar-FUP" secondAttribute="centerY" constant="-20" id="py4-KB-LgO"/>
+            </constraints>
+            <size key="customSize" width="213" height="275"/>
+            <connections>
+                <outlet property="image" destination="2eN-nj-Wau" id="yEF-Pn-63M"/>
+                <outlet property="time" destination="zBC-gQ-XdT" id="hwX-eH-OXD"/>
+                <outlet property="title" destination="tdW-da-71e" id="jnP-cc-FKR"/>
+            </connections>
+            <point key="canvasLocation" x="203.5" y="333.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="play.png" width="128" height="128"/>
+        <image name="多云.jpg" width="1024" height="683"/>
+    </resources>
+</document>
