@@ -44,6 +44,7 @@ static NSString * const reuseIdentifier = @"Cell";
 }
 - (void)viewWillAppear:(BOOL)animated
 {
+    [super viewWillAppear:animated];
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     self.on = [defaults boolForKey:@"reachable"];
 }
@@ -51,7 +52,7 @@ static NSString * const reuseIdentifier = @"Cell";
 - (void)p_makeData:(NSInteger)page
 {
      [GMDCircleLoader setOnView:self.view withTitle:@"loading..." animated:YES];
-    NSString *urlStr = [NSString stringWithFormat:@"%@&pg%ld&order=mo&cate=0", listUrl, page];
+    NSString *urlStr = [NSString stringWithFormat:@"%@&pg=%ld&order=mo&cate=0", listUrl, page];
     [requestTool requestWithUrl:urlStr body:nil header:nil backValue:^(NSData *value) {
         NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:value options:(NSJSONReadingAllowFragments) error:nil];
         if (_ishead == YES) {
@@ -82,7 +83,7 @@ static NSString * const reuseIdentifier = @"Cell";
 - (void)p_footerRefresh
 {
     self.collectionView.footer = [MJRefreshAutoNormalFooter footerWithRefreshingBlock:^{
-        _pageIndex ++;
+        DLog(@"%ld", _pageIndex);
         [self p_makeData:_pageIndex];
         [self.collectionView.footer endRefreshing];
     }];

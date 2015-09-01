@@ -173,11 +173,11 @@
     }else if ([weather isEqualToString:@"多云"]) {
         self.weather.image = [UIImage imageNamed:@"多云.jpg"];
     }else if ([weather isEqualToString:@"阴"]) {
-        self.weather.image = [UIImage imageNamed:@"阴.jpg"];
+        self.weather.image = [UIImage imageNamed:@"阴.jpeg"];
     }else if ([weather isEqualToString:@"小雨"]||[weather isEqualToString:@"中雨"]||[weather isEqualToString:@"大雨"]||[weather isEqualToString:@"阵雨"]) {
         self.weather.image = [UIImage imageNamed:@"雨.jpg"];
     }else if ([weather isEqualToString:@"小雪"]||[weather isEqualToString:@"中雪"]||[weather isEqualToString:@"大雪"]) {
-        self.weather.image = [UIImage imageNamed:@"雪.jpg"];
+        self.weather.image = [UIImage imageNamed:@"雪.jpeg"];
     }else if ([weather isEqualToString:@"雷阵雨"]) {
         self.weather.image = [UIImage imageNamed:@"雷阵雨.jpg"];
     }
